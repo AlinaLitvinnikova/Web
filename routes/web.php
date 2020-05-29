@@ -13,22 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/index', 'ApiController@indexAction');
 
-Route::get('/index1', function () {
-    return view('index1');
-});
+Route::get('/index1', 'ApiController@index1Action');
 
-Route::get('/index2', function () {
-    return view('index2');
-});
+Route::get('/index2', 'ApiController@index2Action');
 
-Route::get('/index3', function () {
-    return view('index3');
-});
+Route::get('/index3', 'ApiController@index3Action');
 
-Route::get('/index4', function () {
-    return view('index4');
-});
+Route::get('/index4', 'ApiController@index4Action');
