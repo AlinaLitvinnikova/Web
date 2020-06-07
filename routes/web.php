@@ -22,3 +22,5 @@ Route::get('/index2', 'ApiController@index2Action');
 Route::get('/index3', 'ApiController@index3Action');
 
 Route::get('/index4', 'ApiController@index4Action');
+
+Route::get('/getProducts', 'ApiController@getProducts');

@@ -26,4 +26,8 @@ class ApiController extends Controller
 	{
 		return view('index4');
 	}
+	public function getProducts(Request $request)
+	{
+		return (new ProductController())->show();
+	}
 }
