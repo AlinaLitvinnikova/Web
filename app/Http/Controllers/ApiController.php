@@ -26,6 +26,14 @@ class ApiController extends Controller
 	{
 		return view('index4');
 	}
+	public function formavhodaAction(Request $request)
+	{
+		return view('formavhoda');
+	}
+	public function regAction(Request $request)
+	{
+		return view('reg');
+	}
 	public function getProducts(Request $request)
 	{
 		return (new ProductController())->show();

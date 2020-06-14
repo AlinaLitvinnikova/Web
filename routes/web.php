@@ -23,4 +23,8 @@ Route::get('/index3', 'ApiController@index3Action');
 
 Route::get('/index4', 'ApiController@index4Action');
 
+Route::get('/formavhoda', 'ApiController@formavhodaAction');
+
+Route::get('/reg', 'ApiController@regAction');
+
 Route::get('/getProducts', 'ApiController@getProducts');
