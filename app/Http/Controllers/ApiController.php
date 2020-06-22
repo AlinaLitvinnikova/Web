@@ -12,7 +12,7 @@ class ApiController extends Controller
 	}
 	public function index1Action(Request $request)
 	{
-		return view('index1');
+		return view('index1', ['product'=>(new ProductController())->show()]);
 	}
 	public function index2Action(Request $request)
 	{
@@ -37,5 +37,11 @@ class ApiController extends Controller
 	public function getProducts(Request $request)
 	{
 		return (new ProductController())->show();
+	}
+	public function auth(Request $request)
+	{
+	dump($request->login);
+	dump($request->password);
+	return back()->withInput();
 	}
 }

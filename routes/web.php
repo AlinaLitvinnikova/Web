@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/auth', 'AuthController@auth');
+
+Route::middleware('/auth')->group(function(){
+Route::get('/logout', 'AuthController@logout');
+});
 
 Route::get('/index', 'ApiController@indexAction');
 
