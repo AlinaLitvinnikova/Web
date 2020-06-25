@@ -1,5 +1,10 @@
-@section('content')
+@section('title')
 @extends('layouts.header')
+
+@endsection
+@section('content')
+
+<link rel="stylesheet" href="style4.css">
 <div class="main-information">
 <div class="text-inform">
 <h1><strong>#Оставайтесьдома</strong></h1>

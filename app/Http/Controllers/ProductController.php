@@ -11,5 +11,9 @@ class ProductController extends Controller
 	{
 		return Product::all();
 	}
-
+	
+public function search($title)
+	{
+		return Product::where('title','like', '%'.$title.'%')->get();
+	}
 }

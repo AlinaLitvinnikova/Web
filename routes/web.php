@@ -18,6 +18,8 @@ Route::middleware('/auth')->group(function(){
 Route::get('/logout', 'AuthController@logout');
 });
 
+Route::get('/search', 'ApiController@search');
+
 Route::get('/index', 'ApiController@indexAction');
 
 Route::get('/index1', 'ApiController@index1Action');
@@ -31,5 +33,7 @@ Route::get('/index4', 'ApiController@index4Action');
 Route::get('/formavhoda', 'ApiController@formavhodaAction');
 
 Route::get('/reg', 'ApiController@regAction');
+
+Route::get('/registration', 'AuthController@reg');
 
 Route::get('/getProducts', 'ApiController@getProducts');

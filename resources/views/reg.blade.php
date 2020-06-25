@@ -1,23 +1,36 @@
-@section('content')
+@section('title')
 @extends('layouts.header')
-<form style="width: 550px; height: 550px; margin-left: 35%;">
-  <div class="container">
-    <h1>Регистрация</h1>
-    <p>Пожалуйста, заполните эту форму чтобы создать учетную запись.</p>
+
+@endsection
+@section('content')
+<link rel="stylesheet" href="reg.css">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&d.." rel="stylesheet">
+<link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+</head>
+<body>
+<form style="width: 550px; height: 550px; margin-left: 35%; margin-top: 5%;">
+<div id="range">
+<div class="outer">
+<div class="middle">
+<div class="inner">
+<div class="login-wr">
+<h2>Регистрация</h2>   
+<p> Пожалуйста, заполните эту форму чтобы создать учетную запись.</p>  
     <hr>
-    <input type="text" placeholder="Введите Email" name="email" required>
+	<form method="get" action="/registration" id="registration">
+    <input type="text" placeholder="Введите логин" name="login" >
 
-    <input type="password" placeholder="Введите пароль" name="psw" required>
+    <input type="email_address" placeholder="Введите Email" name="email_address" >
 
-    <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
-
-    <label>
-      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запонить меня</label>
-	
-    <div class="clearfix">
-      <button type="button" class="cancelbtn">Отменить</button>
-      <button type="submit" class="signupbtn">Регистрация</button>
+    <input type="password" placeholder="Введите пароль" name="password" >
+	<div class="clearfix">
+    <button type="submit" class="signupbtn">Регистрация</button>
+	</hr>
     </div>
+    </form>
+   
+	
+    
   </div>
 </form>
 @endsection('content')

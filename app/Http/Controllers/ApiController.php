@@ -44,4 +44,12 @@ class ApiController extends Controller
 	dump($request->password);
 	return back()->withInput();
 	}
+	public function search(Request $request)
+	{
+	    $index1 = (new ProductController())->search($request->search);
+	    if (!is_null($products)){
+	        return "Не найдено";
+		}
+		return view('index1', ['product'=>$index1]);
+	}
 }

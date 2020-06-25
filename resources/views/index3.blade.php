@@ -1,5 +1,9 @@
-@section('content')
+@section('title')
 @extends('layouts.header')
+
+@endsection
+@section('content')
+<link rel="stylesheet" href="style3.css">
 <div class="main-info">
 <div class="text">
 <h1><strong>Заказы через сайт, вы можете оформлять круглосуточно! Сайт интернет-магазина "FIFIONA" работает для вас без выходных, праздников и перерыва на обед! </strong></h1>

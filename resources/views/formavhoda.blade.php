@@ -1,5 +1,9 @@
 @extends('layouts.header')
+@section('title')
+
+@endsection
 @section('content')
+<link rel="stylesheet" href="formavhoda.css">
 <div id="range">
 <div class="outer">
 <div class="middle">

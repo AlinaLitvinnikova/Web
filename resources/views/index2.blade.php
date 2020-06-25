@@ -1,5 +1,10 @@
-@section('content')
+@section('title')
 @extends('layouts.header')
+
+@endsection
+@section('content')
+<link rel="stylesheet" href="style2.css">
+
 <div class="main-info">
 <div class="text">
 <h2><strong>Заказ Вы можете оплатить одним из 4-х способов:</strong></h2>
